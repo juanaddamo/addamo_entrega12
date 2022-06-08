@@ -1,4 +1,4 @@
-# addamo_entrega11
+# addamo_entrega12
 Project name: Annie's Bakery
 
 ## Table of content
@@ -7,7 +7,7 @@ Project name: Annie's Bakery
 3. [FAQs?]
 
 [General information]
-* Desafio: SASS II + SEO
+* Desafio: TERCERA ENTREGA DEL PROYECTO FINAL
 * Curso: Desarrollo Web
 * Centro de Capacitacion Coderhouse (www.coderhouse.com)
 
