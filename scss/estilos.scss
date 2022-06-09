@@ -25,9 +25,21 @@ body{
     .saludoUno{
         text-align: center;
     }
-    .carousel{
-        max-width: 410px;
-        max-height: 530px;
+    .carrouselIndex{
+        width: 95%;
+    }
+    .promo {
+        margin: 10px;
+        padding: 10px;
+    }
+    .promoMes {
+        width: 95%;
+        margin: 10px;
+        padding: 10px;
+        box-shadow: .3rem .3rem .3rem 0.3rem rgba(0, 0, 0, .2);
+    }
+    .promoMes:hover{
+        transform: scale(1.02);
     }
     .parrafoDescriptivo{
         padding: 0.5rem;
@@ -40,12 +52,16 @@ body{
     @include flex (flex, column);
     margin: 0.5rem;
     .videoUno{
-        width: 300px;
+        width: $anchoVideo1;
         align-self: center;
     }
     .aboutCompleta{
-        margin: 0.5rem;
-        text-align: justify
+        @include textos ();
+        .imagenIconos{
+            display: flex;
+            margin: 1rem;
+            justify-content: space-evenly;
+        }
     }
     .aboutFirma{
         text-align: center;
@@ -71,14 +87,7 @@ body{
     .barraClasica{
         grid-area: barraClasica;
         justify-self: center;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        background-color: $colorMedio;
-        border-radius: 1.5rem;
-        margin: 1rem;
-        padding: 1rem;
-        max-width: $medidaMobile * 1.5;
+        @include estiloBarra ();
     }
     .clasicaUno{
         grid-area: clasicaUno;
@@ -89,14 +98,9 @@ body{
             border-radius: 0.5rem 0.5rem 0 0;
         }
         .nombre{
-            margin: 0.5rem;
-            font-weight: bold;
+            @include textoTarjeta ();
         }
-        box-shadow: .3rem .3rem .3rem 0.3rem rgba(0, 0, 0, .2);
-        margin: .5rem;
-        justify-self: center;
-        background-color: $colorBlanco;
-        border-radius: 0.5rem;
+        @include formatoTarjeta();
     }
     .clasicaDos{
         grid-area: clasicaDos;
@@ -137,16 +141,7 @@ body{
     @include flex (flex, column);
     align-items: center;
     .barraBundt{
-        justify-self: center;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: space-evenly;
-        background-color: $colorMedio;
-        border-radius: 1.5rem;
-        margin: 1rem;
-        padding: 1rem;
-        max-width: $medidaMobile * 1.5;
+        @include estiloBarra ();
     }
     .tarjetaBundt{
         @include flex (flex, column);
@@ -157,19 +152,13 @@ body{
                 border-radius: 0.5rem 0.5rem 0 0;
             }
             .nombre{
-                margin: 0.5rem;
-                font-weight: bold;
-                text-align: center;
+                @include textoTarjeta();
             }
             .texto{
                 text-align: center;
                 padding: 1rem;
             }
-            box-shadow: .3rem .3rem .3rem 0.3rem rgba(0, 0, 0, .2);
-            margin: .5rem;
-            justify-self: center;
-            background-color: $colorBlanco;
-            border-radius: 0.5rem;
+            @include formatoTarjeta();
         }
         .bundtDos{
             @extend .bundtUno;
@@ -198,8 +187,7 @@ body{
         text-align: center;
     }
     .parrafoContacto{
-        text-align: justify;
-        margin: 1rem;
+        @include textos ();
     }
     .imagenContacto{
         display: flex;

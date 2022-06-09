@@ -1,4 +1,13 @@
 @media screen and (min-width: 768px) {
+    .estiloIndex{
+        .carrouselIndex{
+            max-width: $altoCarrousel;
+        }
+        .promoMes {
+            max-width: $altoCarrousel;
+        }
+    }
+    
     .estiloAbout{
         .videoUno{
             width: 520px

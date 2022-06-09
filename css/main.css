@@ -38,9 +38,18 @@ body {
   justify-content: center; }
   .estiloIndex .saludoUno {
     text-align: center; }
-  .estiloIndex .carousel {
-    max-width: 410px;
-    max-height: 530px; }
+  .estiloIndex .carrouselIndex {
+    width: 95%; }
+  .estiloIndex .promo {
+    margin: 10px;
+    padding: 10px; }
+  .estiloIndex .promoMes {
+    width: 95%;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.2); }
+  .estiloIndex .promoMes:hover {
+    transform: scale(1.02); }
   .estiloIndex .parrafoDescriptivo {
     padding: 0.5rem;
     text-align: center; }
@@ -53,8 +62,13 @@ body {
     width: 300px;
     align-self: center; }
   .estiloAbout .aboutCompleta {
-    margin: 0.5rem;
+    font-family: 'Open Sans';
+    margin: 1rem;
     text-align: justify; }
+    .estiloAbout .aboutCompleta .imagenIconos {
+      display: flex;
+      margin: 1rem;
+      justify-content: space-evenly; }
   .estiloAbout .aboutFirma {
     text-align: center;
     font-weight: bold; }
@@ -69,12 +83,12 @@ body {
     justify-self: center;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    text-align: center;
     background-color: #d49d81;
     border-radius: 1.5rem;
     margin: 1rem;
-    padding: 1rem;
-    max-width: 480px; }
+    padding: .5rem;
+    max-width: 544px; }
   .estiloTartas .clasicaUno, .estiloTartas .clasicaDos, .estiloTartas .clasicaTres, .estiloTartas .clasicaCuatro, .estiloTartas .clasicaCinco, .estiloTartas .clasicaSeis, .estiloTartas .clasicaSiete, .estiloTartas .clasicaOcho, .estiloTartas .clasicaNueve {
     grid-area: clasicaUno;
     max-width: 305px;
@@ -89,7 +103,9 @@ body {
       border-radius: 0.5rem 0.5rem 0 0; }
     .estiloTartas .clasicaUno .nombre, .estiloTartas .clasicaDos .nombre, .estiloTartas .clasicaTres .nombre, .estiloTartas .clasicaCuatro .nombre, .estiloTartas .clasicaCinco .nombre, .estiloTartas .clasicaSeis .nombre, .estiloTartas .clasicaSiete .nombre, .estiloTartas .clasicaOcho .nombre, .estiloTartas .clasicaNueve .nombre {
       margin: 0.5rem;
-      font-weight: bold; }
+      padding: 0.2rem;
+      font-weight: bold;
+      text-align: center; }
   .estiloTartas .clasicaDos {
     grid-area: clasicaDos; }
   .estiloTartas .clasicaTres {
@@ -112,16 +128,14 @@ body {
   flex-direction: column;
   align-items: center; }
   .estiloBundt .barraBundt {
-    justify-self: center;
     display: flex;
     align-items: center;
     text-align: center;
-    justify-content: space-evenly;
     background-color: #d49d81;
     border-radius: 1.5rem;
     margin: 1rem;
-    padding: 1rem;
-    max-width: 480px; }
+    padding: .5rem;
+    max-width: 544px; }
   .estiloBundt .tarjetaBundt {
     display: flex;
     flex-direction: column; }
@@ -137,6 +151,7 @@ body {
         border-radius: 0.5rem 0.5rem 0 0; }
       .estiloBundt .tarjetaBundt .bundtUno .nombre, .estiloBundt .tarjetaBundt .bundtDos .nombre, .estiloBundt .tarjetaBundt .bundtTres .nombre, .estiloBundt .tarjetaBundt .bundtCuatro .nombre, .estiloBundt .tarjetaBundt .bundtCinco .nombre, .estiloBundt .tarjetaBundt .bundtSeis .nombre {
         margin: 0.5rem;
+        padding: 0.2rem;
         font-weight: bold;
         text-align: center; }
       .estiloBundt .tarjetaBundt .bundtUno .texto, .estiloBundt .tarjetaBundt .bundtDos .texto, .estiloBundt .tarjetaBundt .bundtTres .texto, .estiloBundt .tarjetaBundt .bundtCuatro .texto, .estiloBundt .tarjetaBundt .bundtCinco .texto, .estiloBundt .tarjetaBundt .bundtSeis .texto {
@@ -150,8 +165,9 @@ body {
   text-align: center; }
 
 .inicioContacto .parrafoContacto {
-  text-align: justify;
-  margin: 1rem; }
+  font-family: 'Open Sans';
+  margin: 1rem;
+  text-align: justify; }
 
 .inicioContacto .imagenContacto {
   display: flex;
@@ -187,6 +203,10 @@ body {
     background: #fcd4c0; }
 
 @media screen and (min-width: 768px) {
+  .estiloIndex .carrouselIndex {
+    max-width: 530px; }
+  .estiloIndex .promoMes {
+    max-width: 530px; }
   .estiloAbout .videoUno {
     width: 520px; }
   .estiloTartas {
